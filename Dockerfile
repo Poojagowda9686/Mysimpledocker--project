@@ -15,10 +15,10 @@ ENV PATH="$JAVA_HOME/bin:$PATH"
 WORKDIR /app
 
 # Copy the Java source file
-COPY SimpleApp.java .
+COPY Simpleapp.java .
 
 # Compile the Java program
-RUN javac SimpleApp.java
+RUN javac Simpleapp.java
 
 # Set the default command to run the Java app
-CMD ["java", "SimpleApp"]
+CMD ["java", "Simpleapp"]
